@@ -1,0 +1,156 @@
+Detailed Requirements for Facebook Automation Project
+
+1. Selenium WebDriver Setup
+
+Install and configure Selenium WebDriver.
+
+Download and set up the ChromeDriver executable.
+
+Ensure the correct WebDriver version is compatible with the Chrome browser.
+
+
+
+2. TestNG Integration
+
+Use TestNG for test execution and management.
+
+Implement @BeforeClass, @Test, and @AfterClass annotations for structuring the test cases.
+
+Define test priorities for execution order.
+
+
+
+3. Facebook Login
+
+Automate the login process by entering valid credentials (email/phone number and password).
+
+Locate and interact with login input fields using Selenium locators (By.id, By.name).
+
+Click the login button and verify a successful login.
+
+
+
+4. Profile Navigation
+
+After login, navigate to the user's profile page.
+
+Locate and click the "Your Profile" link using an XPath locator.
+
+Ensure the profile page loads completely before proceeding.
+
+
+
+5. Profile Picture Upload
+
+Locate the file upload input element using XPath.
+
+Use sendKeys() to upload an image file from a specified local path.
+
+Handle any pop-ups or confirmation buttons if required.
+
+
+
+6. Friend Suggestions Handling
+
+Navigate to the "Friend Suggestions" page.
+
+Locate the "Add Friend" button for the first suggested friend using XPath.
+
+Scroll to the button if necessary and click it.
+
+Implement proper wait times to ensure smooth execution.
+
+
+
+7. Memories Section Navigation
+
+Navigate to the "Memories" section of Facebook.
+
+Ensure the page loads successfully.
+
+Verify the presence of any past posts or memory suggestions.
+
+
+
+8. Saved Items Navigation
+
+Navigate to the "Saved" section where saved posts or links are stored.
+
+Validate that saved items are displayed correctly.
+
+Ensure smooth transition between pages.
+
+
+
+9. Groups Navigation
+
+Navigate to the "Groups" section.
+
+Verify that the user can access group posts and discussions.
+
+Handle potential group membership prompts or pop-ups.
+
+
+
+10. Watch Videos Navigation
+
+
+
+Navigate to the "Watch" section for Facebook videos.
+
+Scroll through video content and validate playback functionality.
+
+Ensure the page loads completely before moving to the next step.
+
+
+11. Marketplace Navigation
+
+
+
+Navigate to the Facebook Marketplace section.
+
+Ensure the page loads successfully and items are displayed.
+
+Validate search or filtering functionality if necessary.
+
+
+12. JavaScript Executor Usage
+
+
+
+Implement JavascriptExecutor where necessary for clicking or scrolling to elements that might not be interactable directly.
+
+Use JavaScript to ensure elements are in view before interacting with them.
+
+
+13. Exception Handling & Waits
+
+
+
+Use Thread.sleep() for basic delays, but replace with WebDriver explicit waits (WebDriverWait) for efficiency.
+
+Implement exception handling (try-catch) to manage unexpected pop-ups or errors.
+
+Use ExpectedConditions to wait for elements to become visible before interacting.
+
+
+14. Logout Automation
+
+
+
+Locate and click the account menu.
+
+Click the "Log Out" button and ensure successful redirection to the login page.
+
+Validate that the session has ended.
+
+
+15. Test Cleanup
+
+
+
+Implement an @AfterClass method to close the WebDriver session after all tests run.
+
+Ensure the browser is properly closed to prevent resource leakage.
+
+Handle unexpected failures gracefully with proper clean-up logic.

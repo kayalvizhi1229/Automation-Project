@@ -1,0 +1,17 @@
+Requirements for Facebook Automation Project
+
+1.Selenium WebDriver Setup – Configure WebDriver and set up ChromeDriver for automation.
+2.TestNG Integration – Use TestNG for test execution, prioritization, and setup/teardown methods.
+3.Facebook Login – Automate the login process using valid test credentials.
+4.Profile Navigation – Navigate to the user profile after logging in.
+5.Profile Picture Upload – Automate profile picture upload using file input handling.
+6.Friend Suggestions – Navigate to the friend suggestions page and send a friend request.
+7.Memories Section Navigation – Automate access to the Facebook Memories section.
+8.Saved Items Navigation – Automate navigation to the saved items section.
+9.Navigation – Navigate to and verify access to Facebook Groups.
+10.Watch Videos Navigation – Open the Facebook Watch section to view videos.
+11.Marketplace Navigation – Navigate to the Facebook Marketplace section.
+12.JavaScript Executor Usage – Use JavaScript Executor for scrolling and clicking elements if necessary.
+13.Exception Handling & Waits – Implement explicit waits and handle exceptions to ensure smooth execution.
+14.Logout Automation – Automate the process of logging out from Facebook.
+15.Test Cleanup – Ensure WebDriver quits properly in the teardown method after test execution.
