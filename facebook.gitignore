@@ -1,0 +1,13 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore Selenium WebDriver binaries
+chromedriver.exe
+
+# Ignore logs and test reports
+/logs/
+/screenshots/
+
+# Ignore IntelliJ IDEA & Eclipse settings
+/.idea/
+/.settings/
